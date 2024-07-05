@@ -20,7 +20,7 @@ public class MemberController {
 
     @GetMapping("/members")
     public List<Member> getMembers() {
-        return memberRepository.findAll();
+        return memberService.getMembers();
     }
 
     @PostMapping("/members")
